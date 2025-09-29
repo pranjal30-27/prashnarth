@@ -1,7 +1,7 @@
 
 // Load JSON
 async function loadData() {
-  const response = await fetch("data/questions.json");
+  const response = await fetch("questions.json");
   return await response.json();
 }
 
@@ -73,6 +73,7 @@ btn.addEventListener("click", () => {
     <button class="copy-btn" onclick="copyCode()">Copy</button>
     <pre><code>${q.solutions[lang]}</code></pre>`;
 });
+
 
 
 
